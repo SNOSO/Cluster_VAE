@@ -5,8 +5,8 @@ library(tfautograph)
 
 # Load data
 
-DLPFC <- readRDS("~/spatial_cluster_evaluation/manuscript_spatial_transcriptomics_cluster_evaluation_2024/RefSeuratObj.RDS")
-gl <- readRDS("~/spatial_cluster_evaluation/manuscript_spatial_transcriptomics_cluster_evaluation_2024/DLPFCGeneList.RDS")
+DLPFC <- readRDS("RefSeuratObj.RDS")
+gl <- readRDS("DLPFCGeneList.RDS")
 
 #subset
 DLPFC@assays$SCT@scale.data <-
